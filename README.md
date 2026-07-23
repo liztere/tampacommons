@@ -1,42 +1,26 @@
 # Tampa Commons
 
-A free, open, community-maintained resource directory for Tampa Bay.
+A free, open resource directory for Tampa Bay.
 
-**Live site:** [Coming soon]
-
----
-
-## What is this?
-
-Tampa Commons is a directory of regenerative farms, mutual aid networks, activist groups, native plant nurseries, LGBTQ+ resources, and ethical alternatives across Hillsborough, Pinellas, and Manatee Counties.
-
-No ads. No algorithms. No login required. Just neighbors helping neighbors.
+**Live site:** tampacommons.org
 
 ---
 
-## Launch Checklist
+## What this?
 
-The site is fully built and functional. These are the remaining steps — all require your own accounts/payment, so they're not something that can be done for you:
+Tampa Commons is a directory of regenerative farms, mutual aid networks, activist groups, native plant nurseries, LGBTQ+ resources, ethical alternatives and more across Hillsborough, Pinellas, and Manatee Counties.
 
-- [ ] **Register a domain** (tampacommons.org or similar) — Namecheap, Porkbun, etc. (~$12–15/yr)
-- [ ] **Connect the domain to Netlify/GitHub Pages** and update DNS
-- [ ] **Set up email forwarding** for hello@tampacommons.org → your real inbox (usually free through your registrar)
-- [ ] **Create a Formspree account** (formspree.io, free tier) and replace `YOUR_FORM_ID` in `index.html`'s `<form action="...">` with your real form endpoint — the submit form is fully wired, it just needs this one ID
-- [ ] **Create an Open Collective account** and replace the placeholder link in the Support section
-- [ ] **Create a Ko-fi account** and replace that placeholder link too
-- [ ] **Update `og:url` and `og:image`** in `index.html`'s `<head>` once your real domain is live (currently placeholder `tampacommons.org` URLs)
-
-Everything else — favicon, meta tags, robots.txt, sitemap, LICENSE, the actual map/filter/events functionality — is done and ready to deploy as-is.
+No ads, algorithms, or login required.
 
 ---
 
 ## Features
 
-- 🗺️ **Interactive map** with 49 community resources
-- 🔍 **Filter by category** (Farms, Mutual Aid, Activist Groups, etc.)
-- 📅 **Events calendar** with recurring community events
-- 📱 **Mobile-friendly** responsive design
-- 🌐 **Offline-ready** — runs entirely client-side
+- **Interactive map** with 49 and growing community resources
+-  **Filter by category** (Farms, Mutual Aid, Activist Groups, etc.)
+-  **Events calendar** with recurring community events
+-  **Mobile-friendly** responsive design
+-  **Offline-ready** — runs entirely client-side
 
 ---
 
@@ -44,8 +28,7 @@ Everything else — favicon, meta tags, robots.txt, sitemap, LICENSE, the actual
 
 - **Frontend:** Vanilla HTML, CSS, JavaScript
 - **Maps:** Leaflet.js + OpenStreetMap
-- **Hosting:** Deploy to Netlify, GitHub Pages, or Vercel
-- **No build step** — just edit and push
+- **Hosting:** Deployed to Netlify from Github
 
 ---
 
@@ -101,34 +84,12 @@ Open `app.js` and add to the `resources` array:
 ### Option 2: Airtable backend (future)
 See `FRAMEWORK_DECISION.md` for instructions on connecting to Airtable for community editing.
 
----
-
-## Deploy
-
-### Netlify (Recommended)
-1. Push code to GitHub
-2. Go to [netlify.com](https://netlify.com)
-3. "New site from Git" → Select your repo
-4. Deploy settings: Leave everything default
-5. Done! You get a free `*.netlify.app` subdomain
-
-### GitHub Pages
-1. Go to repo Settings → Pages
-2. Source: Deploy from branch → `main` → `/root`
-3. Save
-4. Your site will be at `https://yourusername.github.io/tampa-commons/`
-
-### Vercel
-1. Push code to GitHub
-2. Go to [vercel.com](https://vercel.com)
-3. Import your GitHub repo
-4. Done!
 
 ---
 
 ## Contributing
 
-This is a community project. Contributions welcome!
+This is ideally a community project. Contributions welcome!
 
 **To add a resource:**
 1. Fork this repo
@@ -139,7 +100,7 @@ This is a community project. Contributions welcome!
 - Open an issue with the resource name and what needs fixing
 
 **To become a maintainer:**
-- Email hello@tampacommons.org
+- Email tampacommons@tuta.io
 
 ---
 
@@ -172,7 +133,7 @@ Tampa Commons operates on a few core principles:
 **Code:** MIT License (see LICENSE file)
 **Content/Data:** CC BY 4.0 (Creative Commons Attribution)
 
-You're free to:
+You're free (and highly encouraged) to:
 - Use this code for your own community directory
 - Fork and adapt for your city
 - Improve and submit pull requests
@@ -183,18 +144,18 @@ Just give credit and keep it free.
 
 ## Credits
 
-**Started by:** [Your name] in 2026  
-**Built with:** Leaflet.js, OpenStreetMap, community labor  
-**Inspired by:** MutualAidNYC, Regenerate Tampa Bay, WeRegenerate.earth
+**Started by:** [Liztere Fiol](https://liztere.net) in 2026  
+**Built with:** Leaflet.js, OpenStreetMap, love 
+**Inspired by:** MutualAidNYC, WeRegenerate.earth
 
 ---
 
 ## Contact
 
 - **Website:** tampacommons.org
-- **Email:** hello@tampacommons.org
-- **Report issues:** [GitHub Issues](https://github.com/yourusername/tampa-commons/issues)
+- **Email:** tampacommons@tuta.io
+- **Report issues:** [GitHub Issues](https://github.com/liztere/tampa-commons/issues)
 
 ---
 
-Made with ❤️ in Tampa Bay
+Made with <3 in Tampa Bay
