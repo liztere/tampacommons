@@ -140,7 +140,7 @@ function initMainMap() {
   if (mapInitialized) return;
   mapInitialized = true;
   mainMap = L.map("main-map", {zoomControl: true}).setView([27.9, -82.55], 11);
-  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {attribution: "© OpenStreetMap contributors", maxZoom: 19}).addTo(mainMap);
+  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {attribution: "© OpenStreetMap contributors", maxZoom: 19}).addTo(mainMap);
   renderMainMarkers();
 }
 
