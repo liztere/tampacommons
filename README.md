@@ -49,7 +49,6 @@ No ads, algorithms, or login required.
 
 1. Clone this repo
 2. Open `index.html` in your browser
-3. That's it! No build tools needed.
 
 **Live server (optional):**
 ```bash
@@ -89,7 +88,7 @@ See `FRAMEWORK_DECISION.md` for instructions on connecting to Airtable for commu
 
 ## Contributing
 
-This is ideally a community project. Contributions welcome!
+This is ideally a community project. Contributions welcome!! :))
 
 **To add a resource:**
 1. Fork this repo
