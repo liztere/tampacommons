@@ -16,11 +16,11 @@ No ads, algorithms, or login required.
 
 ## Features
 
-- **Interactive map** with 49 and growing community resources
+- **Interactive map** with 49 ( and growing) community resources
 -  **Filter by category** (Farms, Mutual Aid, Activist Groups, etc.)
 -  **Events calendar** with recurring community events
 -  **Mobile-friendly** responsive design
--  **Offline-ready** — runs entirely client-side
+-  **Offline-ready**  runs entirely client-side
 
 ---
 
@@ -49,7 +49,6 @@ No ads, algorithms, or login required.
 
 1. Clone this repo
 2. Open `index.html` in your browser
-3. That's it! No build tools needed.
 
 **Live server (optional):**
 ```bash
@@ -89,7 +88,7 @@ See `FRAMEWORK_DECISION.md` for instructions on connecting to Airtable for commu
 
 ## Contributing
 
-This is ideally a community project. Contributions welcome!
+This is ideally a community project. Contributions welcome!! :))
 
 **To add a resource:**
 1. Fork this repo
