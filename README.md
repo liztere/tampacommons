@@ -16,11 +16,11 @@ No ads, algorithms, or login required.
 
 ## Features
 
-- **Interactive map** with 49 and growing community resources
+- **Interactive map** with 49 ( and growing) community resources
 -  **Filter by category** (Farms, Mutual Aid, Activist Groups, etc.)
 -  **Events calendar** with recurring community events
 -  **Mobile-friendly** responsive design
--  **Offline-ready** — runs entirely client-side
+-  **Offline-ready**  runs entirely client-side
 
 ---
 
