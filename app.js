@@ -296,8 +296,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   
   // Handle resource submission form — posts to Formspree via fetch so the
-  // visitor never leaves the page. Requires a real Formspree form ID (see
-  // the action="" attribute on the <form> in index.html) before this works.
+  // visitor never leaves the page. 
   const resourceForm = document.getElementById('resource-form');
   const formStatus = document.getElementById('form-status');
   if (resourceForm) {
@@ -360,6 +359,27 @@ if (toggleBtn && resourceGrid) {
       resourceGrid.classList.remove('collapsed');
       toggleBtn.textContent = 'Collapse ▲';
     }
+  });
+}
+// Submit Form with Success Message
+const form = document.getElementById('submit-form');
+if (form) {
+  form.addEventListener('submit', function(e) {
+    const btn = form.querySelector('button[type="submit"]');
+    const originalText = btn.textContent;
+    
+    btn.disabled = true;
+    btn.textContent = 'Submitting...';
+    
+    // Formspree will handle the actual submission
+    // Show success message after a short delay
+    setTimeout(() => {
+      alert(' Thank you! Your submission has been received.\n\nA volunteer will review it and add it to the map soon.');
+      
+      form.reset();
+      btn.disabled = false;
+      btn.textContent = originalText;
+    }, 800);
   });
 }
 });

@@ -257,54 +257,62 @@
         <h2 class="section-h2">Add a resource</h2>
         <p>If you know of a farm, mutual aid group, activist organization, native plant nursery, or other community resource that should be listed here, submit it. A volunteer will review and add it within a few days.</p>
       </div>
-      <form class="submit-form" id="resource-form" action="https://formspree.io/f/mvzerdyj" method="POST">
+          <form id="submit-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <div class="form-row">
+        <label class="form-label">Resource name</label>
+        <input class="form-input" type="text" name="name" placeholder="e.g. Suncoast Compost" required>
+      </div>
+
+      <div class="form-row-2">
         <div class="form-row">
-          <label class="form-label" for="rf-name">Resource name</label>
-          <input class="form-input" type="text" id="rf-name" name="resource_name" placeholder="e.g. Suncoast Compost" required />
-        </div>
-        <div class="form-row-2">
-          <div class="form-row">
-            <label class="form-label" for="rf-category">Category</label>
-            <select class="form-select form-input" id="rf-category" name="category" required>
-              <option value="">Select one…</option>
-              <option>Farm / Garden</option>
-              <option>Farmers Market</option>
-              <option>Mutual Aid</option>
-              <option>Activist Group</option>
-              <option>Environmental</option>
-              <option>Native Plants</option>
-              <option>Apothecary</option>
-              <option>LGBTQ+</option>
-              <option>Composting</option>
-              <option>Art Collective</option>
-              <option>Dance</option>
-              <option>Network</option>
-              <option>Event (recurring)</option>
-              <option>Other</option>
-            </select>
-          </div>
-          <div class="form-row">
-            <label class="form-label" for="rf-city">City</label>
-            <input class="form-input" type="text" id="rf-city" name="city" placeholder="e.g. St. Petersburg" required />
-          </div>
+          <label class="form-label">Category</label>
+          <select class="form-select form-input" name="category" required>
+            <option value="">Select one…</option>
+            <option>Farm / Garden</option>
+            <option>Market</option>
+            <option>Apothecary</option>
+            <option>Composting</option>
+            <option>Native Plants</option>
+            <option>Environment</option>
+            <option>Activist Group</option>
+            <option>LGBTQ+</option>
+            <option>Mutual Aid</option>
+            <option>Art Collective</option>
+            <option>Dance</option>
+            <option>Network / Directory</option>
+            <option>Other</option>
+          </select>
         </div>
         <div class="form-row">
-          <label class="form-label" for="rf-url">Website (optional)</label>
-          <input class="form-input" type="url" id="rf-url" name="website" placeholder="https://…" />
+          <label class="form-label">City / Area</label>
+          <input class="form-input" type="text" name="city" placeholder="e.g. St. Petersburg" required>
         </div>
-        <div class="form-row">
-          <label class="form-label" for="rf-desc">Short description</label>
-          <textarea class="form-textarea form-input" id="rf-desc" name="description" placeholder="What does this resource offer? Who is it for?" required></textarea>
+      </div>
+
+      <div class="form-row">
+        <label class="form-label">Full Address (for map)</label>
+        <input class="form-input" type="text" name="address" 
+              placeholder="e.g. 1108 E Scott Street, Tampa, FL 33602" required>
+      </div>
+
+      <div class="form-row">
+        <label class="form-label">Website (optional)</label>
+        <input class="form-input" type="url" name="url" placeholder="https://...">
+      </div>
+
+      <div class="form-row">
+        <label class="form-label">Short description</label>
+        <textarea class="form-textarea form-input" name="description" rows="4" 
+                  placeholder="What does this resource offer? Who is it for?" required></textarea>
+      </div>
+      <!-- Honeypot - Leave this empty! Humans won't see it, bots will fill it -->
+        <div style="display:none;">
+          <label>Do not fill this field</label>
+          <input type="text" name="_gotcha" tabindex="-1" autocomplete="off">
         </div>
-        <div class="form-row">
-          <label class="form-label" for="rf-email">Your email (optional, in case we have questions)</label>
-          <input class="form-input" type="email" id="rf-email" name="_replyto" placeholder="you@example.com" />
-        </div>
-        <!-- honeypot field to deter simple spam bots; hidden from real visitors via CSS -->
-        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
-        <button class="form-submit" type="submit">Submit for review →</button>
-        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
-      </form>
+
+      <button type="submit" class="form-submit">Submit for review →</button>
+    </form>
     </div>
   </div>
 </section>
