@@ -81,7 +81,7 @@ Open `app.js` and add to the `resources` array:
 ```
 
 ### Option 2: Airtable backend (future)
-See `FRAMEWORK_DECISION.md` for instructions on connecting to Airtable for community editing.
+
 
 
 ---
@@ -108,7 +108,7 @@ This is ideally a community project. Contributions welcome!! :))
 - [x] Launch with 49 resources
 - [x] Events calendar
 - [ ] Connect to Airtable for community editing
-- [ ] Add submission form (Google Forms or Airtable)
+- [x] Add submission form (Formspree or Airtable)
 - [ ] Photo uploads for resources
 - [ ] "Near me" geolocation feature
 - [ ] Print-friendly directory view
@@ -119,11 +119,11 @@ This is ideally a community project. Contributions welcome!! :))
 
 Tampa Commons operates on a few core principles:
 
-1. **Free and open** — No paywalls, no logins, no tracking
-2. **Community-maintained** — Built by neighbors for neighbors
-3. **Locally-focused** — Only resources in the Tampa Bay tri-county area
-4. **Ethical alternatives** — Prioritize regenerative, community-oriented resources
-5. **Accessible** — Works on any device, any browser, no JavaScript required for core content
+1. **Free and open** - No paywalls,  logins, or tracking
+2. **Community-maintained** - maintained by residents 
+3. **Locally-focused** - Only resources in the Tampa Bay tri-county area
+4. **Ethical alternatives** — Prioritize regenerative, sustainable, and/or community-oriented resources
+5. **Accessible** - Works on any device, any browser
 
 ---
 
@@ -157,4 +157,4 @@ Just give credit and keep it free.
 
 ---
 
-Made with <3 in Tampa Bay
+
