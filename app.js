@@ -89,8 +89,8 @@ const resources = [
   {name: "Tampa City Dance Center", cat: "dance", lat: 27.9540, lng: -82.4590, desc: "Acro, jazz, hip hop, contemporary for all ages.", url: "https://tcdancecenter.com/"},
   {name: "LUX Dance Collective", cat: "dance", lat: 27.9460, lng: -82.4620, desc: "Community dance programs for ages 2–18 at all levels.", url: ""},
   {name: "WeRegenerate.earth", cat: "network", lat: 27.9500, lng: -82.4565, desc: "National regenerative products & services directory. Find and list regenerative offerings near you. Includes events calendar, forums, and disaster resources.", url: "https://weregenerate.earth/"},
-  {name: "Regenerate Tampa Bay", cat: "network", lat: 27.9515, lng: -82.4575, desc: "Curated local directory of regenerative farms, markets, apothecaries, native nurseries, and sustainable resources across Tampa Bay. The origin of this commons.", url: "https://regeneratetampabay.org/"},
-  {name: "Sustany Foundation", cat: "network", lat: 27.9525, lng: -82.4585, desc: "Nonprofit supporting local sustainability and resiliency programs. Maintains a comprehensive links directory of regional sustainability resources.", url: "https://sustany.org/"},
+  {name: "Regenerate Tampa Bay", cat: "network", lat: 27.9515, lng: -82.4575, desc: "Sister site. Former in-person event landing page, turned into knowledge garden for regenerative practice and ethos.", url: "https://regeneratetampabay.org/"},
+  {name: "Sustany Foundation", cat: "network", lat: 27.9525, lng: -82.4585, desc: "Nonprofit supporting local sustainability and resiliency programs. Maintains a comprehensive links directory of regional sustainability resources. Somewhat dubious, but we won't throw the baby out with the bathwater", url: "https://sustany.org/"},
   {name: "Eco Pass", cat: "network", lat: 27.9535, lng: -82.4595, desc: "Directory of vetted eco-friendly local businesses for green dining, experiences, and shopping across Tampa Bay.", url: "https://www.ecopass.me/"}
 ];
 
@@ -339,6 +339,29 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+  // Collapsible "All Resources" section - Collapsed by default
+const toggleBtn = document.getElementById('toggle-resources');
+const resourceGrid = document.getElementById('resource-grid');
+
+if (toggleBtn && resourceGrid) {
+  let isCollapsed = true;  // ← Changed to true (collapsed by default)
+  
+  // Start collapsed
+  resourceGrid.classList.add('collapsed');
+  toggleBtn.textContent = 'Expand ▼';
+  
+  toggleBtn.addEventListener('click', () => {
+    isCollapsed = !isCollapsed;
+    
+    if (isCollapsed) {
+      resourceGrid.classList.add('collapsed');
+      toggleBtn.textContent = 'Expand ▼';
+    } else {
+      resourceGrid.classList.remove('collapsed');
+      toggleBtn.textContent = 'Collapse ▲';
+    }
+  });
+}
 });
 
 // Estimate total page weight from actual transferred bytes (LTM-style transparency note)
@@ -351,7 +374,7 @@ function reportPageWeight() {
   resources.forEach(r => { bytes += r.transferSize || 0; });
   if (bytes === 0) { el.textContent = "Page weight unavailable in this browser"; return; }
   const kb = (bytes / 1024).toFixed(0);
-  el.textContent = `This page has loaded ~${kb} KB so far — map tiles load only once you scroll to the map`;
+  el.textContent = `This page has loaded ~${kb} KB so far — map tiles lazy load`;
 }
 
 // On page load
