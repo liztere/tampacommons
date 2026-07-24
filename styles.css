@@ -90,13 +90,14 @@ nav {
 
 /* ── HERO ── */
 .hero {
-  min-height: 500px;
+  min-height: 520px;
   border-bottom: 1px solid var(--ink);
   display: grid;
   grid-template-columns: 1fr 1fr;
   position: relative;
   overflow: hidden;
 }
+
 .hero-left {
   padding: 4rem 0 4rem 4rem;
   display: flex;
@@ -181,36 +182,30 @@ nav {
   opacity: 0.55;
   margin-top: 4px;
 }
+
 .hero-right {
-  position: relative;
+  display: none;                    /* Hidden by default (mobile) */
   border-left: 1px solid var(--ink);
 }
+
 #hero-img {
   width: 100%;
   height: 100%;
-  display: block;
-  opacity: 0.9;
+  object-fit: cover;
 }
 
-.hero-map-badge {
-  position: absolute;
-  bottom: 2rem; right: 2rem;
-  background: var(--sand);
-  padding: 12px 18px;
-  border-radius: 0;
-  border: 1px solid var(--ink);
+/* Show image only on desktop and large tablets */
+@media (min-width: 769px) {
+  .hero-right {
+    display: block;
+  }
 }
-.hero-map-badge strong {
-  display: block;
-  font-size: 13px;
-  color: var(--ink);
-  margin-bottom: 2px;
-  font-weight: 400;
-}
-.hero-map-badge span {
-  font-size: 11px;
-  color: var(--ink);
-  opacity: 0.6;
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .hero-left {
+    padding: 3.5rem 1.5rem 4rem;
+  }
 }
 
 
