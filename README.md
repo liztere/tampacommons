@@ -67,6 +67,8 @@ Install "Live Server" extension and right-click index.html
 ## Adding Resources
 
 ### Option 1: Edit JavaScript directly (current)
+
+For the maintainer: submissions currently need to be manually added to app.js's resources array after review:
 Open `app.js` and add to the `resources` array:
 
 ```javascript
@@ -86,17 +88,42 @@ Open `app.js` and add to the `resources` array:
 
 ---
 
+## Forking for Your Own Region
+
+Want to build a version of this for your own city? See FORKING.md for a full walkthrough. replacing the resource data, recentering the map, rebranding, and redeploying.
+
+### Deploy
+
+Netlify
+Push code to GitHub
+Go to netlify.com
+"New site from Git" -> Select your repo
+Deploy settings: Leave everything default
+You get a free *.netlify.app subdomain
+
+GitHub Pages
+Go to repo Settings -> Pages
+Source: Deploy from branch -> main -> /root
+Save
+Your site will be at https://yourusername.github.io/region-commons/
+
+Vercel
+Push code to GitHub
+Go to vercel.com
+Import your GitHub repo
+Done
+
 ## Contributing
 
-This is ideally a community project. Contributions welcome!! :))
+This is a community project. Contributions welcome!
 
-**To add a resource:**
-1. Fork this repo
-2. Add the resource to `app.js`
-3. Submit a pull request
+To add a resource or event: Use the submission form on the site; it goes straight to a volunteer moderator for review. No git or coding needed.
 
-**To report an error:**
-- Open an issue with the resource name and what needs fixing
+To improve the site itself (bug fixes, features, accessibility, performance): See CONTRIBUTING.md for the full contributor workflow.
+
+To report an error:
+
+Open an issue with the resource name and what needs fixing
 
 **To become a maintainer:**
 - Email tampacommons@tuta.io
