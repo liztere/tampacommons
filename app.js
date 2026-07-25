@@ -66,7 +66,7 @@ const resources = [
   {name: "Little Red Wagon Nursery", cat: "native", lat: 27.9302, lng: -82.5009, desc: "Florida native plants. Butterfly host and nectar plants.", url: "https://littleredwagonnativenursery.com/"},
   {name: "Wilcox Nursery", cat: "native", lat: 27.8743, lng: -82.7884, desc: "Est. 1941. Native trees, shrubs, wildflowers. Largo.", url: "https://www.wilcoxnursery.com/"},
   {name: "Sweet Bay Nursery", cat: "native", lat: 27.5710, lng: -82.4410, desc: "Premier native plant nursery since 1995. Parrish.", url: "https://sweetbaynursery.com/"},
-  {name: "Wise Hands Native Nursery", cat: "native", lat: 27.7900, lng: -82.6600, desc: "Wholesale native wildflowers, grasses, shrubs.", url: "https://wisehandsnativenursery.com/"},
+  {name: "Wise Hands Native Nursery", cat: "native", lat: 27.7523, lng: -82.6985, desc: "Wholesale native wildflowers, grasses, shrubs.", url: "https://wisehandsnativenursery.com/"},
   {name: "Tampa Bay Waterkeeper", cat: "env", lat: 27.9506, lng: -82.4572, desc: "Protects Tampa Bay watershed. Advocacy, testing, litigation.", url: "https://www.tampabaywaterkeeper.org/"},
   {name: "Suncoast Waterkeeper", cat: "env", lat: 27.7726, lng: -82.6386, desc: "Defends Suncoast waterways through advocacy and legal action.", url: "https://www.suncoastwaterkeeper.org/"},
   {name: "Tampa Bay Sierra Club", cat: "env", lat: 27.9508, lng: -82.4582, desc: "Phosphate mining, clean water, climate, renewable energy.", url: "https://www.sierraclub.org/florida/tampa-bay"},
@@ -91,7 +91,8 @@ const resources = [
   {name: "WeRegenerate.earth", cat: "network", lat: 27.9500, lng: -82.4565, desc: "National regenerative products & services directory. Find and list regenerative offerings near you. Includes events calendar, forums, and disaster resources.", url: "https://weregenerate.earth/"},
   {name: "Regenerate Tampa Bay", cat: "network", lat: 27.9515, lng: -82.4575, desc: "Sister site. Former in-person event landing page, turned into knowledge garden for regenerative practice and ethos.", url: "https://regeneratetampabay.org/"},
   {name: "Sustany Foundation", cat: "network", lat: 27.9525, lng: -82.4585, desc: "Nonprofit supporting local sustainability and resiliency programs. Maintains a comprehensive links directory of regional sustainability resources. Somewhat dubious, but we won't throw the baby out with the bathwater", url: "https://sustany.org/"},
-  {name: "Eco Pass", cat: "network", lat: 27.9535, lng: -82.4595, desc: "Directory of vetted eco-friendly local businesses for green dining, experiences, and shopping across Tampa Bay.", url: "https://www.ecopass.me/"}
+  {name: "Eco Pass", cat: "network", lat: 27.9535, lng: -82.4595, desc: "Directory of vetted eco-friendly local businesses for green dining, experiences, and shopping across Tampa Bay.", url: "https://www.ecopass.me/"},
+  {name: "Little Tree Homestead", cat: "farm", lat: 27.7508, lng: -82.7071, desc: "Non-profit educational nursery", url: "https://littletreehomestead.org/"}
 ];
 
 // Events data
