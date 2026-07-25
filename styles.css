@@ -64,6 +64,8 @@ nav {
 }
 .nav-links {
   display: flex; align-items: center; gap: 1.5rem;
+  border: 1px solid var(--ink);
+  padding: 10px;
 }
 .nav-links a {
   color: var(--ink);
