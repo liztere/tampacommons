@@ -92,7 +92,8 @@ const resources = [
   {name: "Regenerate Tampa Bay", cat: "network", lat: 27.9515, lng: -82.4575, desc: "Sister site. Former in-person event landing page, turned into knowledge garden for regenerative practice and ethos.", url: "https://regeneratetampabay.org/"},
   {name: "Sustany Foundation", cat: "network", lat: 27.9525, lng: -82.4585, desc: "Nonprofit supporting local sustainability and resiliency programs. Maintains a comprehensive links directory of regional sustainability resources. Somewhat dubious, but we won't throw the baby out with the bathwater", url: "https://sustany.org/"},
   {name: "Eco Pass", cat: "network", lat: 27.9535, lng: -82.4595, desc: "Directory of vetted eco-friendly local businesses for green dining, experiences, and shopping across Tampa Bay.", url: "https://www.ecopass.me/"},
-  {name: "Little Tree Homestead", cat: "farm", lat: 27.7508, lng: -82.7071, desc: "Non-profit educational nursery", url: "https://littletreehomestead.org/"}
+  {name: "Little Tree Homestead", cat: "farm", lat: 27.7508, lng: -82.7071, desc: "Non-profit educational nursery", url: "https://littletreehomestead.org/"},
+  {name: "St. Pete Barter and Trade FB Group", cat: "mutual", lat: 27.8038, lng: -82.6789, desc: "Barter and trade group for Pinellas County hosted on Facebook Groups", url: "https://www.facebook.com/share/g/1BYaPc8a7b/"},
 ];
 
 // Events data
